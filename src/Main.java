@@ -1,4 +1,6 @@
 import algorithms.BubbleSort;
+import algorithms.InsertionSort;
+import algorithms.SelectionSort;
 
 import java.util.Arrays;
 
@@ -6,9 +8,14 @@ import java.util.Arrays;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-       int[] array = {35,1,3,5,5,8,1};
+       int[] array = {12,11,13,5,6};
 
-        BubbleSort.sort(array);
+
+        //BubbleSort.sort(array)
+        //InsertionSort.findCloseTo(array,3);
+        //InsertionSort.sort(array);
+        SelectionSort.sort(array);
+
         for (int temp: array) {
             System.out.println(temp);
         }
